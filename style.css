@@ -1,14 +1,69 @@
-function ExibirNome() {
-    let nome = document.getElementById('nomeInput').value.trim().toLowerCase();
-
-    if (nome === "scooby doo") {
-        document.getElementById('mensagem').innerHTML = "Você acertou! Parabéns!";
-    } else {
-        document.getElementById('mensagem').innerHTML = "Que pena, você errou...";
-    }
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://th.bing.com/th/id/R.669fc33681d329feaf7a6f5797cea6b3?rik=DUE0%2bqa6tGlutw&pid=ImgRaw&r=0') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
 }
 
-function Limpar() {
-    document.getElementById('nomeInput').value = "";
-    document.getElementById('mensagem').innerHTML = "Resposta:";
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+  
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+.botoes button:hover {
+    background-color: #ffaa00;
+}
+
+.botao-jogar, .botao-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #00ccff;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-jogar:hover, .botao-voltar:hover {
+    background-color: #0099cc;
+}
+
+.home .container {
+    padding: 50px;
 }
