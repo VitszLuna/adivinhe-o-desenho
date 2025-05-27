@@ -1,4 +1,14 @@
-body {
-    background: url(https://th.bing.com/th/id/R.669fc33681d329feaf7a6f5797cea6b3?rik=DUE0%2bqa6tGlutw&pid=ImgRaw&r=0) no-repeat center center fixed;
-    background-size: cover;
+function ExibirNome() {
+    let nome = document.getElementById('nomeInput').value.trim().toLowerCase();
+
+    if (nome === "scooby doo") {
+        document.getElementById('mensagem').innerHTML = "Você acertou! Parabéns!";
+    } else {
+        document.getElementById('mensagem').innerHTML = "Que pena, você errou...";
+    }
+}
+
+function Limpar() {
+    document.getElementById('nomeInput').value = "";
+    document.getElementById('mensagem').innerHTML = "Resposta:";
 }
